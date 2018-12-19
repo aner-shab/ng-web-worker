@@ -34,7 +34,6 @@ export class HttpWorker extends WebWorkerService {
 			}
 			xhr.send();
 			if (xhr.readyState === XMLHttpRequest.DONE) {
-				console.debug(xhr);
 				return xhr.responseText;
 			}
 		}
